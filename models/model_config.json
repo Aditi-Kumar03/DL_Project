@@ -1,0 +1,53 @@
+{
+  "project_name": "NutriVision AI",
+  "version": "1.0.0",
+  "architecture_recommendation": {
+    "primary_architecture": "MobileNetV2",
+    "comparison_architecture": "ResNet50",
+    "justification": "Given the single-label image classification format of the 15,404-image 43-class dataset, MobileNetV2 provides optimal balance between high classification accuracy, compact model footprint (~14 MB vs ~98 MB), and ultra-low CPU inference latency (~9.3 ms vs ~34.0 ms), which is critical for real-time Streamlit UI and multi-crop region classification."
+  },
+  "dataset_spec": {
+    "repository": "SohlHealth/enhanced-indian-food-classification",
+    "total_images": 15404,
+    "num_classes": 43,
+    "stratified_splits": {
+      "train_ratio": 0.70,
+      "val_ratio": 0.15,
+      "test_ratio": 0.15,
+      "random_seed": 42
+    }
+  },
+  "input_spec": {
+    "image_size": [224, 224],
+    "channels": 3,
+    "normalization": {
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225]
+    }
+  },
+  "training_hyperparameters": {
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "epochs": 15,
+    "early_stopping_patience": 3,
+    "lr_scheduler": "CosineAnnealingLR",
+    "optimizer": "AdamW",
+    "loss_function": "WeightedCrossEntropyLoss",
+    "augmentation": {
+      "random_horizontal_flip": 0.5,
+      "random_rotation_degrees": 15,
+      "color_jitter": {
+        "brightness": 0.2,
+        "contrast": 0.2,
+        "saturation": 0.2
+      },
+      "random_affine_degrees": 10
+    }
+  },
+  "export_spec": {
+    "weights_filename": "best_model.pt",
+    "class_names_filename": "class_names.json",
+    "model_config_filename": "model_config.json"
+  }
+}

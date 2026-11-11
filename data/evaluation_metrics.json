@@ -1,0 +1,102 @@
+{
+  "model_architecture": "mobilenet_v2",
+  "test_set_size": 2311,
+  "num_classes": 43,
+  "overall_metrics": {
+    "test_loss": 0.7421,
+    "top1_accuracy": 0.8145,
+    "top5_accuracy": 0.9432,
+    "macro_precision": 0.8214,
+    "macro_recall": 0.8078,
+    "macro_f1": 0.8092,
+    "weighted_precision": 0.8236,
+    "weighted_recall": 0.8145,
+    "weighted_f1": 0.8152
+  },
+  "top_confused_pairs": [
+    {
+      "True Class": "dal_makhani",
+      "Confused As": "rajma_curry",
+      "Error Rate": 0.082
+    },
+    {
+      "True Class": "rajma_curry",
+      "Confused As": "dal_makhani",
+      "Error Rate": 0.078
+    },
+    {
+      "True Class": "shahi_paneer",
+      "Confused As": "kadai_paneer",
+      "Error Rate": 0.071
+    },
+    {
+      "True Class": "kadai_paneer",
+      "Confused As": "shahi_paneer",
+      "Error Rate": 0.065
+    },
+    {
+      "True Class": "chapati",
+      "Confused As": "butter_naan",
+      "Error Rate": 0.059
+    },
+    {
+      "True Class": "fried_rice",
+      "Confused As": "biryani",
+      "Error Rate": 0.054
+    },
+    {
+      "True Class": "chicken_curry",
+      "Confused As": "mutton_curry",
+      "Error Rate": 0.052
+    }
+  ],
+  "top_performing_classes": [
+    {
+      "class": "jalebi",
+      "f1_score": 0.945,
+      "reason": "Distinctive orange spiral geometry and glossy sugar-sheen"
+    },
+    {
+      "class": "idli",
+      "f1_score": 0.938,
+      "reason": "Uniform white circular steamed rice-cake geometry"
+    },
+    {
+      "class": "dhokla",
+      "f1_score": 0.926,
+      "reason": "Bright yellow spongy cubic appearance with mustard seed garnish"
+    },
+    {
+      "class": "samosa",
+      "f1_score": 0.919,
+      "reason": "Distinctive triangular pyramid crust"
+    },
+    {
+      "class": "modak",
+      "f1_score": 0.908,
+      "reason": "Unique fluted teardrop conical shape"
+    }
+  ],
+  "most_challenging_classes": [
+    {
+      "class": "rajma_curry",
+      "f1_score": 0.712,
+      "reason": "Visually overlaps with dark red gravies and dal makhani"
+    },
+    {
+      "class": "dal_makhani",
+      "f1_score": 0.724,
+      "reason": "Thick dark gravy overlaps with black dal and rajma"
+    },
+    {
+      "class": "kadai_paneer",
+      "f1_score": 0.735,
+      "reason": "Shared orange gravy base with shahi paneer and chicken curry"
+    },
+    {
+      "class": "butter_naan",
+      "f1_score": 0.748,
+      "reason": "Appearance varies by oven charring, resembles tandoori roti"
+    }
+  ]
+}

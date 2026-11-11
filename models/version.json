@@ -1,0 +1,17 @@
+{
+  "project": "NutriVision AI",
+  "version": "1.0.0",
+  "exported_at": "2026-11-08",
+  "framework": "PyTorch 2.11.0",
+  "model_architecture": "mobilenet_v2",
+  "weights_file": "best_model.pt",
+  "class_names_file": "class_names.json",
+  "model_config_file": "model_config.json",
+  "metrics_file": "evaluation_metrics.json",
+  "num_classes": 43,
+  "input_resolution": [224, 224],
+  "top1_accuracy": 0.8145,
+  "top5_accuracy": 0.9432,
+  "macro_f1": 0.8092,
+  "status": "ready_for_production"
+}
