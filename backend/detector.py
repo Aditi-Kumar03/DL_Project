@@ -1,5 +1,5 @@
 """
-NutriVision AI — Object Detection Adapter (YOLO)
+NutriLens AI — Object Detection Adapter (YOLO)
 Implements FoodModelInterface for future object detection models (e.g. YOLOv8 / YOLOv11)
 when bounding-box annotated multi-food datasets (CVAT/Label Studio) are available.
 """

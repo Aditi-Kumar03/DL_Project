@@ -1,5 +1,5 @@
 """
-NutriVision AI — Meal Service Module
+NutriLens AI — Meal Service Module
 Coordinates database logging of meals, calculates daily summaries,
 tracks calorie deficits and surpluses, and maintains user health profiles.
 """

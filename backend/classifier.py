@@ -1,5 +1,5 @@
 """
-NutriVision AI — Food Classifier Implementation
+NutriLens AI — Food Classifier Implementation
 Implements FoodModelInterface using PyTorch (MobileNetV2 or ResNet50 backbone).
 """
 

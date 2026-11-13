@@ -1,5 +1,5 @@
 """
-NutriVision AI — Nutrition Engine
+NutriLens AI — Nutrition Engine
 Calculates nutritional amounts, serving conversions, and meal totals
 based on verified nutrient values per 100g.
 """

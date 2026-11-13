@@ -1,5 +1,5 @@
 """
-NutriVision AI — Health Calculation Module
+NutriLens AI — Health Calculation Module
 Calculates BMI, BMR (Mifflin-St Jeor), TDEE, and daily caloric targets.
 Important Notice: These values are mathematical estimates for nutritional planning,
 not medical diagnoses or clinical prescriptions.

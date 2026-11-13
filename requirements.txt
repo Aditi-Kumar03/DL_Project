@@ -1,4 +1,4 @@
-# NutriVision AI — Dependencies
+# NutriLens AI — Dependencies
 # For NVIDIA GPU (CUDA 12.4):
 # pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 # For CPU only:

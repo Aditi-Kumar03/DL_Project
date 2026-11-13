@@ -1,5 +1,5 @@
 {
-  "project_name": "NutriVision AI",
+  "project_name": "NutriLens AI",
   "version": "1.0.0",
   "architecture_recommendation": {
     "primary_architecture": "MobileNetV2",

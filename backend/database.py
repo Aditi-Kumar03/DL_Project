@@ -1,5 +1,5 @@
 """
-NutriVision AI — SQLite Database Module
+NutriLens AI — SQLite Database Module
 Manages food nutrition data (IFCT 2017 / ICMR-NIN verified), serving units,
 user health profiles, and meal history logs.
 """

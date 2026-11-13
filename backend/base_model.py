@@ -1,5 +1,5 @@
 """
-NutriVision AI — Base Model Interface
+NutriLens AI — Base Model Interface
 Standardized abstraction for food identification models (Classifiers and Detectors).
 """
 
