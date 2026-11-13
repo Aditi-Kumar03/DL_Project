@@ -11,7 +11,7 @@
 > **NutriLens AI** is an end-to-end computer vision and dietary health intelligence web platform built specifically for authentic Indian cuisine. It combines transfer learning on 50-layer deep residual networks (**ResNet-50**), heuristic multi-dish "Thali" segmentation, verified national dietary data (**ICMR-NIN IFCT 2017**), and Asian-Indian metabolic risk scoring into a real-time full-stack web application.
 
 ---
-
+website link: https://nutrilens-food-ai.streamlit.app/
 <<<<<<< HEAD
 ##  The Project Story (STAR Framework)
 =======
