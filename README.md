@@ -12,7 +12,7 @@
 
 ---
 
-## 📖 The Project Story (STAR Framework)
+##  The Project Story (STAR Framework)
 
 For recruiters, engineers, and researchers, this project demonstrates real-world machine learning engineering: moving from raw, messy data and complex visual problems to an audited, robust, and deployed production application.
 
@@ -88,7 +88,7 @@ Because the dataset lacked bounding boxes, supervised object detectors (YOLO) co
 
 ---
 
-## 🧠 System Architecture & Workflow (Explained for Beginners)
+##  System Architecture & Workflow (Explained for Beginners)
 
 If you're new to deep learning, here is how the system processes a meal photo step-by-step:
 
@@ -137,7 +137,7 @@ If you're new to deep learning, here is how the system processes a meal photo st
 
 ---
 
-## 📊 Model Architecture & Benchmarks
+##  Model Architecture & Benchmarks
 
 | Metric / Specification | **ResNet-50 (Production Model)** | **MobileNetV2 (Edge Baseline)** |
 | :--- | :--- | :--- |
@@ -156,7 +156,7 @@ If you're new to deep learning, here is how the system processes a meal photo st
 
 ---
 
-## 🍲 Dataset Specifications
+##  Dataset Specifications
 
 * **Official Repository:** `SohlHealth/enhanced-indian-food-classification` (Hugging Face / Kaggle).
 * **Total Samples:** **15,404 RGB images**.
@@ -169,26 +169,26 @@ If you're new to deep learning, here is how the system processes a meal photo st
 
 ---
 
-## 💻 Full-Stack Web Application Modules
+##  Full-Stack Web Application Modules
 
 The application (`frontend/app.py`) provides 6 cohesive modules:
 
-1. **🏠 Home:** High-level project summary, quick-start guide, and interactive catalog of all 43 supported Indian dishes.
-2. **📈 Dashboard:** Real-time visual tracking of today's calorie consumption vs. daily TDEE budget, animated progress rings, and macronutrient distribution (Protein, Carbs, Fats, Fiber).
-3. **📷 Food Scanner:** 
+1. ** Home:** High-level project summary, quick-start guide, and interactive catalog of all 43 supported Indian dishes.
+2. ** Dashboard:** Real-time visual tracking of today's calorie consumption vs. daily TDEE budget, animated progress rings, and macronutrient distribution (Protein, Carbs, Fats, Fiber).
+3. ** Food Scanner:** 
    * **Single Meal Mode:** Upload or take a picture with your webcam, crop the target bowl, predict the dish, choose standard Indian household serving units (*katori, roti, piece*), and review nutrient breakdown.
    * **Multiple Meals (Thali) Mode:** Automatically detects multiple dishes on a platter using K-Means color clustering, lists all items with individual serving selectors, and computes cumulative plate calories.
-4. **👤 Health Profile:** Calculates personalized metabolic markers using the **Mifflin-St Jeor formula** and classifies BMI strictly against **Asian-Indian ICMR guidelines**:
+4. ** Health Profile:** Calculates personalized metabolic markers using the **Mifflin-St Jeor formula** and classifies BMI strictly against **Asian-Indian ICMR guidelines**:
    * *Underweight:* $< 18.5\text{ kg/m}^2$
    * *Normal:* $18.5 - 22.9\text{ kg/m}^2$
    * *Overweight (At-Risk):* $23.0 - 24.9\text{ kg/m}^2$
    * *Obese:* $\ge 25.0\text{ kg/m}^2$
-5. **📜 Meal History:** Persistent historical log of all meals consumed, filterable by date, featuring a 7-day caloric expenditure bar chart and 1-click meal deletion.
-6. **📚 Nutrition Database:** Searchable dictionary of all 43 Indian dishes showing their laboratory-tested IFCT 2017 nutritional composition per 100g, supported serving units, and calorie densities.
+5. ** Meal History:** Persistent historical log of all meals consumed, filterable by date, featuring a 7-day caloric expenditure bar chart and 1-click meal deletion.
+6. ** Nutrition Database:** Searchable dictionary of all 43 Indian dishes showing their laboratory-tested IFCT 2017 nutritional composition per 100g, supported serving units, and calorie densities.
 
 ---
 
-## 🚀 How to Run the Project Locally
+##  How to Run the Project Locally
 
 Follow these step-by-step instructions to clone and run NutriLens AI on your local machine:
 
@@ -219,7 +219,7 @@ cd DL_Project
   ```bash
   pip install -r requirements.txt
   ```
-* **With NVIDIA GPU Acceleration (CUDA 12.4):**
+* **With T4 GPU Acceleration (CUDA 12.4):**
   ```bash
   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
   pip install -r requirements.txt
@@ -238,7 +238,7 @@ Open **`http://localhost:8501`** in any web browser to use the application!
 
 ---
 
-## 📂 Project Repository Structure
+##  Project Repository Structure
 
 ```text
 DL_Project/
@@ -282,22 +282,13 @@ DL_Project/
 
 ---
 
-## 🔮 Future Enhancements Roadmap
+##  Future Enhancements Roadmap
 
 1. **Supervised Instance Segmentation (YOLOv8-Seg):** Transition from the current unsupervised K-Means/grid thali proposal to an end-to-end trained YOLOv8-Seg or Mask R-CNN network with polygon boundary masks for precise dish separation.
 2. **3D Food Volume & Monocular Depth Estimation:** Implement monocular depth estimation models (MiDaS / ZoeDepth) alongside reference fiducial markers to calculate exact 3D volumetric density and automated food weight without manual serving selection.
 3. **Clinical Chronic Disease Engine:** Scale the dataset from 43 to 150+ regional dishes and integrate clinical **Glycemic Index (GI)** warnings for Type-2 diabetic patients and sodium monitoring for cardiovascular hypertension based on ICMR clinical guidelines.
 
----
 
-## 📜 Scientific References & Acknowledgments
-
-* **Nutritional Composition:** Government of India, Ministry of Health and Family Welfare. *Indian Food Composition Tables (IFCT 2017)*, National Institute of Nutrition (NIN), Indian Council of Medical Research (ICMR).
-* **Metabolic Standards:** Indian Council of Medical Research (ICMR). *Nutrient Requirements and Recommended Dietary Allowances for Indians*.
-* **Deep Learning Backbone:** He, K., Zhang, X., Ren, S., & Sun, J. (2016). *Deep Residual Learning for Image Recognition*. IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
-* **Dataset:** SohlHealth. *Enhanced Indian Food Classification Dataset (15,404 images, 43 classes)*.
-
----
 
 ### ⚠️ Disclaimer
 *NutriLens AI provides dietary, caloric, macronutrient, BMI, and TDEE estimations for informational and personal health-tracking purposes only. It is not intended as medical advice or a substitute for professional clinical dietetics.*
