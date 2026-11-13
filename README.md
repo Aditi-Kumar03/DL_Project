@@ -13,12 +13,7 @@
 ---
 website link: https://nutrilens-food-ai.streamlit.app/
 
-
-<<<<<<< HEAD
-##  The Project Story (STAR Framework)
-=======
 ## The Project Story (STAR Framework)
->>>>>>> effa231 (changing name)
 
 For recruiters, engineers, and researchers, this project demonstrates real-world machine learning engineering: moving from raw, messy data and complex visual problems to an audited, robust, and deployed production application.
 
