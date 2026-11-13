@@ -1,4 +1,4 @@
-# 🥗 NutriLens AI — Indian Food Recognition & Clinical Dietary Intelligence
+#  NutriLens AI — Indian Food Recognition & Clinical Dietary Intelligence
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg)](https://pytorch.org/)
